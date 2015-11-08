@@ -12,6 +12,7 @@ public class Page1WordsForFriends extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        //hi there
         setContentView(R.layout.activity_page1_words_for_friends);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
