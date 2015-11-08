@@ -7,6 +7,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.MotionEvent;
 import android.view.View;
+<<<<<<< HEAD
 import android.widget.Button;
 
 import com.firebase.client.Firebase;
@@ -20,6 +21,12 @@ public class Page1WordsForFriends extends AppCompatActivity implements View.OnCl
 
     //construct firebase url to access data
     private Firebase myRef = new Firebase("https://sizzling-torch6802.firebaseio.com/");
+=======
+import android.widget.ArrayAdapter;
+import android.widget.ListView;
+
+public class Page1WordsForFriends extends AppCompatActivity { ListView
+>>>>>>> 469f61515a05ee04909ac3a237d330074b2f73d7
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -34,14 +41,16 @@ public class Page1WordsForFriends extends AppCompatActivity implements View.OnCl
 
         FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
         fab.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();
+    @Override
+        public void onClick(View view) {
+            Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
+                    .setAction("Action", null).show();
+        String[] posts={"Today's Posts"};
+        ArrayAdapter<String> adapter = ArrayAdapter<String>[getListView]
             }
         });
 
-    public boolean OnTouchEvent(MotionEvent event) {}
+    public boolean OnTouchEvent(MotionEvent event) {
     
 
     }
