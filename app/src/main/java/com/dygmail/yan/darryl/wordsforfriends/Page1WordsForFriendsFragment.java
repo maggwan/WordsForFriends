@@ -20,4 +20,6 @@ public class Page1WordsForFriendsFragment extends Fragment {
                              Bundle savedInstanceState) {
         return inflater.inflate(R.layout.fragment_page1_words_for_friends, container, false);
     }
+
+
 }
