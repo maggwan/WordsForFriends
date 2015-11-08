@@ -14,10 +14,12 @@
         completions."</string>
     <!-- Strings related to open thread page -->
     <string name="title_activity_page1_words_for_friends">Page1WordsForFriends</string>
-    <string name="edit_message">How are you feeling?</string>
+    <string name="first_post">How are you feeling?</string>
     <string name="button_chat">Chat</string>
     <string name="action_settings">Settings</string>
     <string name="title_activity_main">MainActivity</string>
     <string name="title_activity_chat_room">ChatRoom</string>
-    <!-- Strings related to 1st page toolbar -->
+    <!-- Strings related to toolbar -->
+    <!-- Strings related to chat room -->
+    <string name="edit_message">Enter a message.</string>
 </resources>

@@ -18,7 +18,7 @@ public class ChatRoom extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         //Initialize firebase
-        Firebase.setAndroidContext();
+        Firebase.setAndroidContext(this);
 
         setContentView(R.layout.activity_chat_room);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);

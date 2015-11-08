@@ -26,7 +26,7 @@
         <activity
             android:name=".Page1WordsForFriends"
             android:label="@string/title_activity_page1_words_for_friends"
-            android:theme="@style/AppTheme.NoActionBar" >
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" >
         </activity>
         <activity
             android:name=".ChatRoom"

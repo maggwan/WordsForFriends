@@ -1,32 +1,33 @@
 package com.dygmail.yan.darryl.wordsforfriends;
 
+
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.view.MotionEvent;
 import android.view.View;
-<<<<<<< HEAD
 import android.widget.Button;
 
 import com.firebase.client.Firebase;
 import com.firebase.client.DataSnapshot;
 import com.firebase.client.FirebaseError;
 import com.firebase.client.ValueEventListener;
-
-import java.util.ArrayList;
-
-public class Page1WordsForFriends extends AppCompatActivity implements View.OnClickListener{
-
-    //construct firebase url to access data
-    private Firebase myRef = new Firebase("https://sizzling-torch6802.firebaseio.com/");
-=======
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
-public class Page1WordsForFriends extends AppCompatActivity { ListView
->>>>>>> 469f61515a05ee04909ac3a237d330074b2f73d7
+import java.util.ArrayList;
+
+public class Page1WordsForFriends extends AppCompatActivity{
+
+    //construct firebase url to access data
+    private Firebase myRef = new Firebase("https://sizzling-torch6802.firebaseio.com/");
+    Toolbar toolbar;
+    Button redirect;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -35,24 +36,39 @@ public class Page1WordsForFriends extends AppCompatActivity { ListView
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
-        //Button initalize
-        Button redirect = (Button)findViewByID(R.id.go);
-        redirect.OnClickListener(this);
-
-        FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
-        fab.setOnClickListener(new View.OnClickListener() {
-    @Override
-        public void onClick(View view) {
-            Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                    .setAction("Action", null).show();
-        String[] posts={"Today's Posts"};
-        ArrayAdapter<String> adapter = ArrayAdapter<String>[getListView]
-            }
-        });
-
-    public boolean OnTouchEvent(MotionEvent event) {
-    
-
     }
 
-}
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu){
+        // Inflate the menu; this adds items to the action bar if it is present.
+        getMenuInflater().inflate(R.menu.menu_page1_words_for_friends, menu); //
+        return true;
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        // Handle action bar item clicks here. The action bar will
+        // automatically handle clicks on the Home/Up button, so long
+        // as you specify a parent activity in AndroidManifest.xml.
+        int id = item.getItemId();
+
+        //noinspection SimplifiableIfStatement
+        if (id == R.id.action_settings) {
+            return true;
+        }
+
+        return super.onOptionsItemSelected(item);
+    }
+
+//FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
+        //fab.setOnClickListener(new View.OnClickListener() {
+
+        //public void onClick(View view;){
+
+            //Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
+                    //.setAction("Action", null).show();
+            //String[] posts = {"Today's Posts"};
+        }
+
+//}
+//}
